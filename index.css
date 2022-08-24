@@ -1,0 +1,60 @@
+#img_side{
+position: relative;
+right:650px;
+width: 100%;
+/* border: 1px solid red; */
+top: 50px;
+}
+#heading_img{
+    margin-top: 1px;
+    display: flex;
+    width: 100%;
+}
+#heading_img>img{
+    width: 100%;
+    height: 50%;
+}
+#price{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#img_side>h1{
+width: 500px;
+}
+#price>div{
+    color: hsl(180,96%,30%);
+    /* background-color: blue; */
+}
+#img_side>h2,#img_side>p{
+    color: hsl(180,96%,30%);
+}
+#img_side>button{
+    background-color:rgb(12, 182, 182);
+    color: white;
+font-size: 20px;
+width: 320px;
+border-radius: 3px;
+border-color: rgb(6, 153, 153);
+/* height:70px; */
+text-align: center;
+}
+#hindi{
+    font-weight: bold;
+    font-size: 20px;
+}
+#img_side>button:hover{
+    background-color:rgb(9, 156, 156);
+    border-radius: 10px;
+}
+ /*************/
+
+#position{
+    display: flex;
+    border: 1px solid red;
+    width: 50%;
+    margin: auto;
+}
+#position>div>img{
+    width: 30%;
+}
