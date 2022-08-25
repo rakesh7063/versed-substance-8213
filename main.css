@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.ketto-nav{
+    max-width: 100%;
+    display: flex;
+    align-items:center;
+    padding: 10px 80px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+}
+.ketto-nav > div {
+    height: 50px;
+    /* border: 1px solid red; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.ketto-nav img{
+    width: 100%;
+    height: 100%;
+    /* height:60px; */
+}
+#div1{
+    height: 40px;
+}
+.ketto-nav > #div2 {
+    margin: 0px 90px ;
+    padding-top: 20px;
+}
+
+#rupee {
+    font-size: 17px;
+    margin: 10px 40px  0px 450px;
+    border-radius: 10px;
+    background-color: rgb(243,243,243);
+    border: none;
+}
+.ketto-nav > #div4 {
+    padding-top: 20px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxx NAV- END xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+#share {
+    display: flex;
+    height: 50px;
+    padding: 0px 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    border-radius: ;
+    background-color: teal;
+}
+#share > i {
+    margin-right: 10px;
+}
+
+
