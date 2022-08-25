@@ -49,24 +49,118 @@
 
 .container {
     display: flex;
-    width: 80%;
+    width: 85%;
     margin: auto;
+    margin-top: 60px;
 }
+.main-div {
+    display: block;
+    width: 70%;
+} 
 
-#share {
+.parent-share {
     display: flex;
+    justify-content: end;
+    margin: 20px;
+}
+#share {
+    display:flex;
     height: 50px;
     padding: 0px 20px;
     justify-content: space-around;
     align-items: center;
     font-size: 17px;
-    font-weight: bold;
-    color: white;
-    border-radius: ;
-    background-color: teal;
+    font-weight: 500;
+    color:rgb(1,184,182);
+    border-radius: 6px;
+    background-color:rgb(255,255,255);
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+#share:hover{
+    cursor: pointer;
+    background-color: rgb(1,184,182);
+    color: rgb(255,255,255);
+}
+
 #share > i {
     margin-right: 10px;
 }
+.parant-about{
+    max-width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
 
+.parant-about  i{
+    color: rgb(205 205 205);
+}
+.parant-about > div > i{
+    display: inline-block;
+    margin-right: 0px 5px;
+}
+.parant-about > div > span{
+    display: inline-block;
+    font-size: 10px;
+    position: absolute;
+    left: auto;
+    color:  rgb(1,184,182);
+}
+.parant-about > div {
+    padding-bottom: 20px;
+}
 
+.parant-about > div:active  {
+    border-bottom: 2px solid rgb(1,184,182);
+    padding-bottom: 20px;
+    
+}
+.parant-about > div:active > i {
+       color: teal;
+}
+
+.krKeDekho{
+    border-bottom: 2px solid rgb(1,184,182);
+    color: teal;
+    padding-bottom: 20px;
+}
+.sub-main-div {
+    border-bottom: 1px solid rgb(1,184,182);
+    margin-bottom: 30px;
+    padding: 0px 20px 0px 20px;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxx share end xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.append{
+    margin-top: 10px;
+}
+
+.append > .clickAbout > h2 {
+    display: flex;
+    /* background-color: teal; */
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.append > .clickAbout > p{
+    text-align: center;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    line-height-step: 10px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.append > .clickAbout > .img1{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.append > .clickAbout > .read-btn1 {
+    display: block;
+    margin: auto;
+}

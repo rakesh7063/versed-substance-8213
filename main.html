@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
+
 <body>
     <div class="ketto-nav">
         <div id="div1"><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=1.0" alt=""></div>
-        <div id="div2"><p>India’s most trusted crowdfunding site.</p></div>
+        <div id="div2">
+            <p>India’s most trusted crowdfunding site.</p>
+        </div>
         <select name="" id="rupee">
             <option value="">₹</option>
             <option value="">$</option>
@@ -22,20 +25,37 @@
             <option value="">SAR</option>
             <option value="">SGD</option>
         </select>
-        <div id="div4"><p>Sign In</p></div>
+        <div id="div4">
+            <p>Sign In</p>
+        </div>
     </div>
     <div class="container">
         <div class="main-div">
-            <img src="https://kettocdn.gumlet.io/media/campaign/212000/212655/image/1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=768&dpr=1.0" alt="">
-            <button id="share">
-                <i class="fa-solid fa-share-nodes"></i>
-                Share This Fundraiser
-            </button>
+            <div class="sub-main-div">
+                <img src="https://kettocdn.gumlet.io/media/campaign/212000/212655/image/1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=768&dpr=1.0"
+                    alt="">
+                <div class="parent-share">
+                    <button id="share">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        Share This Fundraiser
+                    </button>
+                </div>
+                <div class="parant-about">
+                    <div  id="about"><i class="fa-solid fa-globe"></i>About</div>
+                    <div id="Updates"><i class="fa-solid fa-clock-rotate-left"></i>Updates<span>38</span></div>
+                    <div id="Comment"><i class="fa-solid fa-comment"></i>Comment<span>577</span></div>
+                </div>
+            </div>
+
+            <div class="append"></div><br>
+
         </div>
         <div class="sidebar">
 
         </div>
     </div>
-    
+
 </body>
+
 </html>
+<script src="main.js"></script>
