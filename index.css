@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 #img_side{
 position: relative;
 right:650px;
@@ -18,6 +24,7 @@ top: 50px;
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-top: 30px;
 }
 #img_side>h1{
 width: 500px;
@@ -26,22 +33,28 @@ width: 500px;
     color: hsl(180,96%,30%);
     /* background-color: blue; */
 }
-#img_side>h2,#img_side>p{
+#img_side>h3,#img_side>p{
     color: hsl(180,96%,30%);
+    
+}
+#img_side>h3{
+    margin-top: 50px;
+    font-size: 20px;
 }
 #img_side>button{
     background-color:rgb(12, 182, 182);
     color: white;
 font-size: 20px;
-width: 320px;
 border-radius: 3px;
 border-color: rgb(6, 153, 153);
 /* height:70px; */
-text-align: center;
+padding: 15px 15px 15px 15px;
+margin-top: 10px;
 }
 #hindi{
     font-weight: bold;
     font-size: 20px;
+    margin-top: 20px;
 }
 #img_side>button:hover{
     background-color:rgb(9, 156, 156);
@@ -51,10 +64,62 @@ text-align: center;
 
 #position{
     display: flex;
-    border: 1px solid red;
-    width: 50%;
+    /* border: 1px solid red; */
+    width: 60%;
     margin: auto;
+    /* justify-content: space-evenly; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* border-color: teal; */
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    bottom:50px;
+    background-color: white;
 }
 #position>div>img{
-    width: 30%;
+    width: 105%;
+}
+#position>div:first-child{
+    width: 28%;
+    margin: auto;
+    margin-left: 20px;
+    /* border: 1px solid brown; */
+}
+#position>div>button{
+    width: 190px;
+    padding: 19px;
+    border-radius: 10px;
+    background-color: hsl(206,54%,27%);
+    color: white;
+    font-size: 17px;
+    display: block;
+    margin: auto;
+    /* margin-left: 20px; */
+}
+#position>div:nth-child(2){
+    /* border: 1px solid brown; */
+    width: 45%;
+    margin-top: 15px;
+    /* margin-right: 17px; */
+    /* margin-left: 10px; */
+}
+#position>div:nth-child(3){
+    width: 20%;
+    margin-left: 10px;
+}
+#position>div>p{
+    color: rgb(6, 153, 153);
+    margin-top: 9px;
+    width: 100%;
+}
+#position>div>h3{
+    color: rgb(47, 51, 54);
+    /* border: 1pc dashed blueviolet; */
+}
+#div{
+    text-align: center;
+}
+#div>p{
+    color: rgb(158, 165, 170);
+    margin-top: 5px;
 }
