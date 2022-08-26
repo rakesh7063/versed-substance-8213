@@ -2,8 +2,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    gap: 20px;
+    gap: 30px;
     line-height: 50px;
+    width: 70%;
+    margin: auto;
+    /* margin-top: 10px; */
   }
   #container .main_img {
     width: 100%;
@@ -65,8 +68,59 @@
       border-radius: 10px;
       overflow: hidden;
       text-overflow: ellipsis;
+      padding: 10px;
   }
   #subcont:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+  }
+
+  #left{
+    position: relative;
+    top: 20pc;
+    font-size: 70px;
+    left: 50px;
+    font-weight:bold;
+    color:  rgb(158, 165, 170);
+  }
+  #right{
+    position: relative;
+    top: 20pc;
+    font-size: 70px;
+    left: 73pc;
+    font-weight:bold;
+    color:  rgb(158, 165, 170);
+  }
+  #fb_btn{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #fb_btn>img{
+    width: 20%;
+    display: block;
+    margin: auto;
+  }
+  #fb_btn>p{
+    margin-left: 10px;
+  }
+  #btn_div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid brown; */
+    justify-content: space-between;
+  }
+  #don_btn{
+    /* margin-left: 30px; */
+    width: 100px;
+    background-color: rgb(158, 165, 170);
+    color: white;
+    border-color: white;
+    padding: 10px;
+    /* font-size: 17px; */
     cursor: pointer;
   }
