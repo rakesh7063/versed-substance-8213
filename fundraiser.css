@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#main {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+#box {
+  width: 20%;
+  height: fit-content;
+  padding: 20px;
+  margin-left: 100px;
+  /* margin-top: 162px; */
+  line-height: 50px;
+  font-size: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+#box li {
+  list-style: none;
+  cursor: pointer;
+}
+#box li:nth-child(1) {
+  color: #03a9a8;
+  font-weight: bold;
+}
+#box hr {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: grey;
+}
+#start {
+  width: 100%;
+  padding: 15px 0px;
+  font-size: 20px;
+  background-color: #01bfbd;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  line-height: 50px;
+}
+#container .main_img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#container .avtar_img {
+  width: 60px;
+  border-radius: 100%;
+  padding-left: 10px;
+}
+#container .profile {
+  display: flex;
+  padding-left: 10px;
+}
+#container .helper {
+  margin-left: 10px;
+}
+#container .details {
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+}
+#container .count {
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+}
+#container .raisec {
+  color: grey;
+}
+#container .donate {
+  color: grey;
+  padding-left: 20px;
+}
+#container .pbar {
+  width: 70%;
+  height: 10px;
+  background-color: #03a9a8;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.Title {
+  width: 300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-left: 20px;
+}
+#container .dayl {
+  color: grey;
+}
+#container .support {
+  color: grey;
+}
+#subcont {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#subcont:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+#imgdiv {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: -130px;
+}
+#imgdiv img {
+  width: 100%;
+}
+#search {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 0.5px solid;
+  border-color: grey;
+}
+#filtering {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+#filtering select {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 5px 5px;
+  color: #03a9a8;
+  text-align: center;
+  border-color: grey;
+}
+#filtering option:nth-child(1) {
+  color: #03a9a8;
+}
+#filtering option {
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+}
+#filtering h4 {
+  font-size: 20px;
+  color: grey;
+}
+#chat {
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+#chat .faq {
+  text-decoration: none;
+  color: #03a9a8;
+}
+#chat .wh {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+#chat button {
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: green;
+  margin-left: 200px;
+}
+@media all and (min-width: 480px) and (max-width: 720px){
+
+  #main {
+    width: 100%;
+    display: flex;
+  }
+  #container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 450px;
+  }
+  #box {
+    width: 100%;
+  }
+  #imgdiv {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 440px;
+  }
+  #imgdiv img {
+    width: 100%;
+  }
+  #search {
+    width: 50%;
+  }
+  #filtering {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+}
+
+@media all and (min-width: 320px) and (max-width: 479px){
+  #main {
+    display: flex;
+    width: 100%;
+    margin: auto;
+  }
+
+  #container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 500px;
+  }
+  #box {
+    width: 100%;
+  }
+  #imgdiv {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 438px;
+  }
+  #imgdiv img {
+    width: 100%;
+  }
+  #search {
+    width: 100%;
+  }
+  #filtering {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+}
