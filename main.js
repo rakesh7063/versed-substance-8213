@@ -3,7 +3,7 @@
 document.querySelector("#about").addEventListener("click", ()=> aboutOn())
 let aboutOn = () =>{
     let about = document.querySelector("#about")
-    about.classList.toggle(".krKeDekho")
+    about.classList.toggle("krKeDekho")
 
     document.querySelector(".append").innerHTML=null
     let details = document.createElement("div")
@@ -91,5 +91,66 @@ let Updates = () => {
     document.querySelector(".append").append(div1,div2,div3,div4)
 }
 
+let data = [
+        {name :"Prem Kumar",
+        post: "❝My daughter pari not proper walk because legs weak . So I treatment child hospital but not money I m poor family belong so please help me people donate my daughter .❞",
+        image : "https://kettocdn.gumlet.io/media/individual/4463000/4463772/image/60bb46e753ada.jpeg?w=50&dpr=1.0",
+        },
+        {name :"Prem Kumar",
+        post: "❝My child help please❞",
+        image : "https://kettocdn.gumlet.io/media/individual/4463000/4463772/image/60bb46e753ada.jpeg?w=50&dpr=1.0",
+        },
+        {name :"Rajesh",
+        post: "❝My mother is suffering from stage 4 breast cancer we need funds for her treatment ,Please help us raise our goal amount. Please remove the # in the link to donate [ket.#to/my-mother-is-fighting-for-her-life-and-we-need-your-support-to-save-her-674649] Or search mansha devi on ketto.🙏🏻🙏🏻❞",
+        image : "https://kettocdn.gumlet.io/media/individual/6236000/6236539/image/63050309a634a.jpg?w=50&dpr=1.0",
+        },
+        {name :"Ganga",
+        post: "❝My Son Is Suffering From Hydronephrosis Kidney Disease and Bilateral Swollen Kidneys. He is alive only on Medicines. I Beg Your Mercy For Help To Provide For My Son's Treatment.🙏🏻 Please remove the # in the link and open the link -> ket.#to/my-son-is-suffering-from-kidney-renal-failure-we-need-your-help-to-provide-for-his-treatment-386025 OR (Search ANAND SONAR in KETTO to save his life)❞",
+        image : "https://kettocdn.gumlet.io/media/individual/2266000/2266366/image/cf461dc9d239c70569bc3a43623f3fe4f52967ee.jpg?w=50&dpr=1.0",
+        },
+        {name :"Rajesh",
+        post: "❝My mother is suffering from stage 4 breast cancer we need funds for her treatment ,Please help us raise our goal amount. Please remove the # in the link to donate [ket.#to/my-mother-is-fighting-for-her-life-and-we-need-your-support-to-save-her-674649] Or search mansha devi on ketto.🙏🏻🙏🏻❞",
+        image : "https://kettocdn.gumlet.io/media/individual/6236000/6236539/image/63050309a634a.jpg?w=50&dpr=1.0",
+        },
+        {name :"Prince Kumar Gupta ",
+        post: "❝Lost My First Baby in 2017, Help My Second Baby Get A Chance At Life / This Baby Is Battling Between Life And Death. Please Support.🙏🏻 Please remove the # in the link and open the link -> ket.#to/fundraiser/my-baby-battles-for-his-life-and-we-need-your-support-to-save-him-666323 OR (Search aarav gupta in KETTO to save his life)e❞",
+        image : "https://kettocdn.gumlet.io/media/individual/6357000/6357749/image/b79354be3e27e0da9dfd9b44b587aa3841dedb82.jpg?w=50&dpr=1.0",
+        },
+]
+document.querySelector("#Comment").addEventListener("click", ()=> commentAppend(data))
+let commentAppend  = (data) => {
+    let doc = document.querySelector(".append")
+    doc.innerHTML = null
 
-let 
+    let search = document.createElement("input")
+    search.setAttribute("type","text")
+    search.setAttribute("placeholder","Write something to cheer family and friends")
+
+    let post = document.createElement("h5")
+    post.innerText="POST"
+
+   
+    doc.append(search,post)
+    
+    data.forEach(el => {
+        
+        let div = document.createElement("div")
+        div.setAttribute("class","Co-div")
+
+        let nam = document.createElement("p")
+        nam.innerText= el.name
+
+        let comment = document.createElement("p")
+        comment.id="p"
+        comment.innerText=el.post
+
+        let img = document.createElement("img")
+        img.src = el.image
+
+        div.append(img,nam,comment)
+        document.querySelector(".append").append(div)
+    });
+
+
+
+}
