@@ -160,14 +160,16 @@ cursor: pointer;
 #row_p>h4{
     color: rgb(6, 153, 153);
 } */
-#mobile{
-    width: 90%;
+#mobile_div{
+    display: flex;
+    width: 70%;
     margin: auto;
 }
-#mobile>img{
-    display: block;
-    margin: auto;
-    width: 80%;
+#mobile_side>img{
+    width: 500px;
+}
+.mobile{
+    margin-left: 60px;
 }
 .foundation{
     width: 40%;
@@ -261,4 +263,155 @@ margin-right: 5px;
     color: white;
     border-color: white;
     cursor: pointer;
+}
+.shadow{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 90px;
+    /* border: 1px solid */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 20px 0px 20px;
+    /* justify-content: space-around; */
+}
+#shdow_img{
+    width: 40%;
+    /* border: 1px solid salmon; */
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#shdow_img>img{
+    width: 100%;
+}
+#col_img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    row-gap: 35px;
+    column-gap: 10px;
+}
+.app_img{
+    width: 100px;
+    /* border: 1px solid teal; */
+}
+#col_img>div>p{
+/* border: 1px solid teal; */
+width: 90%;
+font-size: 18px;
+line-height: 20px;
+}
+#shadow_side{
+    width: 50%;
+    /* border: 1px dashed green; */
+    margin-top: 30px;
+    margin-left: 70px;
+}
+#col_img>div>img{
+    width: 40%;
+    /* border: 1px solid teal; */
+}
+#col_h1{
+    /* border: 1px solid; */
+    margin-top: 40px;
+}
+#col_h1>h1{
+font-style:inherit;
+line-height: 40px;
+}
+#app{
+    display: flex;
+    width: 80%;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+#app>div{
+    width: 40%;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* margin-left: 20px; */
+    cursor: pointer;
+}
+
+#Cause{
+    margin-top: 100px;
+    text-align: center;
+}
+#Cause>h1{
+    font-style: inherit;
+    margin-bottom: 20px;
+}
+#Cause>p{
+margin-top: 3px;
+color: rgb(53,79,132);
+font-style: inherit;
+}
+#medical{
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    /* border: 1px solid teal; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#medical>img{
+    width: 155px;
+    margin-left: 5px;
+    display: block;
+    /* border: 1px dashed green; */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+#medical>img:last-child{
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#ketto{
+    text-align: center;
+    margin-top: 90px;
+}
+
+#why{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    row-gap: 50px;
+}
+#why>div{
+    width: 80%;
+    /* border: 1px solid teal; */
+    text-align: center;
+}
+#why>div>img{
+    width: 90px;
+    /* border: 1px solid red; */
+    display: block;
+    margin: auto;
+}
+#why>div>hr{
+    width: 50px;
+    height: 4px;
+    display: block;
+    margin: auto;
+  background-color: yellowgreen;
+}
+#no_2{
+    /* width: 300px; */
+    height: 80px;
+    
+    /* margin-block-start: 50px; */
+    /* border: 1px solid red; */
+}
+#why>div>p{
+    margin-top: 15px;
+    color: rgb(53,79,132);
+}
+#why>div:nth-child(2)>hr{
+    margin-top: 10px;
 }
