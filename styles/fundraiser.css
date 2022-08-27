@@ -181,8 +181,10 @@
   }
   #chunnu {
     width: 100%;
-    background-color: white;
     color: gray;
+  }
+  #chunnu li{
+    color: grey;
   }
   #imgdiv {
     width: 100%;
@@ -224,8 +226,11 @@
     grid-template-columns: 300px;
     grid-template-rows: 500px;
   }
-  #chunnu {
+  #chunnu  {
     width: 100%;
+  }
+  #chunnu li{
+    color: grey;
   }
   #imgdiv {
     width: 200%;
