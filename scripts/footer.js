@@ -23,7 +23,7 @@ let footer = () => {
                 <div class="query">
                     <h3>For any queries</h3>
                     <h5>Email:  <a href="mailto:iesparagjain@gmail.com">iesparagjain@gmail.com</a></h5>
-                    <h5>Contact No: <a href="tel:919770525851">9770525851</a></h5>
+                    <h5>Contact No: <a href="tel:917063077834">7063077834</a></h5>
                 </div>
               
             </div>
