@@ -12,7 +12,7 @@
   gap: 40px;
   margin-bottom: 20px;
 }
-#box {
+#chunnu {
   width: 20%;
   height: fit-content;
   padding: 20px;
@@ -24,15 +24,15 @@
   border-radius: 10px;
   letter-spacing: 2px;
 }
-#box li {
+#chunnu li {
   list-style: none;
   cursor: pointer;
 }
-#box li:nth-child(1) {
+#chunnu li:nth-child(1) {
   color: #03a9a8;
   font-weight: bold;
 }
-#box hr {
+#chunnu hr {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -125,7 +125,7 @@
   width: 100%;
   margin: auto;
   margin-bottom: 50px;
-  /* margin-top: -130px; */
+  margin-top: 80px;
 }
 #imgdiv img {
   width: 100%;
@@ -167,7 +167,7 @@
   font-size: 20px;
   color: grey;
 }
-@media all and (min-width: 480px) and (max-width: 720px){
+@media (max-width: 991px){
 
   #main {
     width: 100%;
@@ -179,8 +179,10 @@
     grid-template-columns: 300px;
     grid-template-rows: 450px;
   }
-  #box {
+  #chunnu {
     width: 100%;
+    background-color: white;
+    color: gray;
   }
   #imgdiv {
     width: 100%;
@@ -193,6 +195,7 @@
   }
   #search {
     width: 50%;
+    
   }
   #filtering {
     width:100%;
@@ -208,7 +211,7 @@
   }
 }
 
-@media all and (min-width: 300px) and (max-width: 479px){
+@media (max-width: 479px){
   #main {
     display: flex;
     width: 100%;
@@ -221,7 +224,7 @@
     grid-template-columns: 300px;
     grid-template-rows: 500px;
   }
-  #box {
+  #chunnu {
     width: 100%;
   }
   #imgdiv {

@@ -1,10 +1,12 @@
 
 
-// import {navBar,popup} from "../scripts/navbar.js"
-// document.getElementById("menu-bar").innerHTML = navBar();
-// import footer from "../scripts/footer.js"
-// document.getElementById("footer_append").innerHTML = footer();
-// popup()
+import {navBar,popup,login} from "../scripts/navbar.js"
+document.getElementById("menu-bar").innerHTML = navBar();
+import footer from "../scripts/footer.js"
+document.getElementById("footer_append").innerHTML = footer();
+popup()
+login()
+
 
  document.getElementById("search").oninput = () =>{
     debouncing(main,1000) 
