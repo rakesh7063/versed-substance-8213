@@ -175,6 +175,14 @@ let debouncing = (func,delay) =>{
 }
 
 let getalldetails =()=>{
-console.log("hii")
+    window.location.href = "./main.html"
+}
+
+document.getElementById("start").onclick = () =>{
+    formDetails();
+}
+
+let formDetails = () =>{
 window.location.href = "./fundraiserform.html"
+
 }

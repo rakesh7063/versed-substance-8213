@@ -204,8 +204,8 @@
     width: 100%;
     margin: auto;
     font-size: 17px;
+    background:linear-gradient(45deg, cyan, darkcyan);
   }
-
 }
 
 @media all and (min-width: 300px) and (max-width: 479px){
@@ -246,6 +246,7 @@
     width: 100%;
     margin: auto;
     font-size: 16px;
+    background:linear-gradient(45deg, cyan, darkcyan);
   }
 }
 
