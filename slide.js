@@ -1,3 +1,11 @@
+import {navBar,popup,login} from "../scripts/navbar.js"
+document.getElementById("menu-bar").innerHTML = navBar();
+import footer from "../scripts/footer.js"
+document.getElementById("footer_append").innerHTML = footer();
+popup()
+login()
+
+
 let data = [
     {
       "image": "https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=300&dpr=1.3",

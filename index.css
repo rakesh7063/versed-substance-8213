@@ -1,7 +1,8 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 #img_side{
@@ -15,6 +16,7 @@ top: 50px;
     margin-top: 1px;
     display: flex;
     width: 100%;
+    margin-top: 90px;
 }
 #heading_img>img{
     width: 100%;

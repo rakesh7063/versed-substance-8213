@@ -11,7 +11,11 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
     <link rel="shortcut icon" href="https://ketto.gumlet.io/assets/images/medical-landing/ketto-shadow.png?w=480&dpr=2.6" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <style>
+        
         @import url(“https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,300&display=swap”);
 
         * {
@@ -278,12 +282,21 @@
         }
 
         .butText {
-            padding: 7px 80px 7px 65px;
+            padding: 7px 100px 7px 65px;
             border-color: rgb(1,191,189);
             color: rgb(1,191,189);
             border-radius: 5px;
             font-weight: bolder;
-            margin-left: 50px;        }
+            margin-left: 50px;
+            /* background-color: red; */
+           }
+           .butText a{
+
+            color: rgb(1,191,189);
+            background-color: #fff;
+
+           }
+         
 
         .fa-solid {
             margin-left: -25px;
@@ -400,6 +413,7 @@
 </head>
 
 <body>
+    <div id="menu-bar"></div>
     <div class="container-fluid">
         <div class="row">
             <div id="heading">
@@ -622,13 +636,19 @@
 
 
 
-
+    <div id="footer_append"></div>
 
 
 </body>
 
 </html>
-<script>
+<script type="module">
+    import {navBar,popup,login} from "../scripts/navbar.js"
+document.getElementById("menu-bar").innerHTML = navBar();
+import footer from "../scripts/footer.js"
+document.getElementById("footer_append").innerHTML = footer();
+popup()
+login()
     let slideIndex = 0;
     showSlides();
 

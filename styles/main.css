@@ -51,7 +51,7 @@
 #head {
     width: 80%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 150px;
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -511,7 +511,8 @@
     padding-top: 2px;
     color: rgb(0,125,225);
 }
-.campaigner > img {
+.campaigner  #pablo {
+    width: 3.5%;
     margin-top: 15px;
     border-radius: 50%;
     position: absolute;

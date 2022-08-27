@@ -8,10 +8,9 @@ popup()
 
 
 setTimeout(function () {
-    alert("congratulations ! Your order is placed ");
+    alert("Thanks for your help ");
 }, 2000)
 setTimeout(function () {
-    alert("continue shopping...");
     window.location.href = "index.html";
 }, 6000)
 
