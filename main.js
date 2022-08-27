@@ -1,6 +1,12 @@
 
+// import {navBar,popup,login} from "../scripts/navbar.js"
+// document.getElementById("menu-bar").innerHTML = navBar();
+// import footer from "../scripts/footer.js"
+// document.getElementById("footer_append").innerHTML = footer();
+// popup()
+// login()
 
-document.querySelector("#about").addEventListener("click", ()=> aboutOn())
+
 let aboutOn = () =>{
     let about = document.querySelector("#about")
     about.classList.toggle("krKeDekho")
@@ -34,7 +40,7 @@ let readMore = ()=> {
 
 }
 
-document.querySelector("#Updates").addEventListener("click", ()=> Updates())
+
 let Updates = () => {
 
     document.querySelector(".append").innerHTML=null
@@ -117,7 +123,7 @@ let data = [
         image : "https://kettocdn.gumlet.io/media/individual/6357000/6357749/image/b79354be3e27e0da9dfd9b44b587aa3841dedb82.jpg?w=50&dpr=1.0",
         },
 ]
-document.querySelector("#Comment").addEventListener("click", ()=> commentAppend(data))
+
 let commentAppend  = (data) => {
     let doc = document.querySelector(".append")
     doc.innerHTML = null
@@ -154,3 +160,13 @@ let commentAppend  = (data) => {
 
 
 }
+document.querySelector("#contribute").addEventListener("click", ()=> cont())
+let cont = () => {
+    window.location.href="fundraiserform.html"
+}
+
+
+window.addEventListener("load",()=> aboutOn())
+document.querySelector("#about").addEventListener("click", ()=> aboutOn())
+document.querySelector("#Updates").addEventListener("click", ()=> Updates())
+document.querySelector("#Comment").addEventListener("click", ()=> commentAppend(data))
