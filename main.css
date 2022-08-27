@@ -13,7 +13,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
 }
-.ketto-nav > div {
+.ketto-nav > div > a {
     height: 50px;
     /* border: 1px solid red; */
     display: block;
@@ -25,7 +25,7 @@
     height: 100%;
     /* height:60px; */
 }
-#div1{
+#div1 > a{
     height: 40px;
 }
 .ketto-nav > #div2 {
@@ -40,20 +40,30 @@
     background-color: rgb(243,243,243);
     border: none;
 }
-.ketto-nav > #div4 {
-    padding-top: 20px;
+.ketto-nav > #div4 > p > a {
+    display: block;
+    padding-top: 10px;
+    color: black;
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxx NAV- END xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
+#head {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .container {
     display: flex;
     width: 85%;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .main-div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     display: block;
     width: 70%;
 } 
@@ -95,6 +105,10 @@
 .parant-about  i{
     color: rgb(205 205 205);
 }
+.parant-about > div {
+    display: inline-flex;
+    gap: 5px;
+}
 .parant-about > div > i{
     display: inline-block;
     margin-right: 0px 5px;
@@ -102,7 +116,7 @@
 .parant-about > div > span{
     display: inline-block;
     font-size: 10px;
-    position: absolute;
+    position: relative;
     left: auto;
     color:  rgb(1,184,182);
 }
@@ -116,12 +130,12 @@
     
 }
 .parant-about > div:active > i {
-       color: teal;
+       color: rgb(1,184,182);
 }
 
 .krKeDekho{
     border-bottom: 2px solid rgb(1,184,182);
-    color: teal;
+    color: rgb(1,184,182);
     padding-bottom: 20px;
 }
 .sub-main-div {
@@ -160,7 +174,131 @@
     margin-bottom: 20px;
 }
 
-.append > .clickAbout > .read-btn1 {
+.append > .clickAbout > button {
     display: block;
     margin: auto;
+    width: 50%;
+    font-size: 17px;
+    padding: 5px;
+    font-weight: 600;
+    color:rgb(1,184,182);
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
+/* xxxxxxxxxxxxxxx social media start xxxxxxxxxxxxxxxxxxxxxxx */
+
+
+.social-media {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social-media > button {
+    font-size: 17px;
+    padding: 8px 30px 8px 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+#Wapp{
+    background-color: rgb(33,189,92);
+}
+#FB{
+    background-color: rgb(59,89,152);
+}
+#donation{
+    background-color: rgb(1,191,189);
+}
+.social-media > button > a {
+    color: white;
+    display: inline-flex;
+    gap: 5px;
+}
+.social-media > button > a > i {
+    color: white;
+}
+.social-media > button > a > span{
+    position: relative;
+    font-size: 13px;
+    margin-top: 3px;
+
+}
+
+/* xxxxxxxxxxxxxxxx updates start xxxxxxxxxxxxxxx */
+
+.div1 {
+    text-align: center;
+    padding: 34px;
+    width: 90%;
+    margin: auto;
+    margin: 22px;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(243,243,243);
+}
+.div1 > span  {
+    width: 30%;
+}
+.div1 > span > button {
+    width: 100%;
+    color: rgb(1,184,182);
+    background-color: white;
+    border: none;
+    font-size: 17px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.div1 > span > button:hover {
+    color: white;
+    background-color: rgb(1,184,182);    
+}
+
+.div2 > h2 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.div3 > p {
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 30px;
+    margin-bottom: 10px;
+}
+
+.div4  {
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: rgb(223,230,243);
+
+}
+.div4 >span {
+    width: 40%;
+}
+.div4 > span > button {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(59,89,152);
+    color: white;
+    font-weight: 500;
+}
+
+
+

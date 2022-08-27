@@ -1,3 +1,5 @@
+
+
 document.querySelector("#about").addEventListener("click", ()=> aboutOn())
 let aboutOn = () =>{
     let about = document.querySelector("#about")
@@ -29,5 +31,65 @@ let aboutOn = () =>{
 
 }
 let readMore = ()=> {
-    
+
 }
+
+document.querySelector("#Updates").addEventListener("click", ()=> Updates())
+let Updates = () => {
+
+    document.querySelector(".append").innerHTML=null
+
+    let div1 = document.createElement("div")
+    div1.setAttribute("class","div1")
+
+    let text = document.createElement("p")
+    text.innerText = "Feel free to ask Family Friends for a new update on this Fundraiser."
+    
+    let pooja = document.createElement("button")
+    pooja.innerText="Ask for update"
+    
+    let span = document.createElement("span")
+    span.append(pooja)
+
+    div1.append(text,span)
+
+    let div2 = document.createElement("div")
+    div2.setAttribute("class","div2")
+
+    let head2 = document.createElement("h2")
+    head2.innerText="Latest Update"
+
+    div2.append(head2)
+
+    let div3 = document.createElement("div")
+    div3.setAttribute("class","div3")
+
+    let text2 = document.createElement("p")
+    text2.innerText="Abir, now 13 years of age, with his second time relapse with Cancer his journey has been long and tough along with the ongoing treatment After recovering from Covid -19 recently and being affected by the virus for the third time due to his weak immune system it has been a tough time on him, Continuous infections and transfusions with side effects of High fevers with chills & body aches have kept him from leading a regular life of kids of his age, long hospital stays/Visits on a regular basis with countless poking & tests have now become a part of his daily life. His overall health condition is being watched very closely. Putting on weight due to the chemotherapy & steroids to hair fall, not being able to move out of bed due to weakness are some of the lesser side reactions & complications of CAR T-cell therapy. Missing school or not having friends adds to this pain and suffering yet he finds small things to keep himself happy, the anxiety of hospital and the poking scares him now, As getting the IV into the vein sometimes is very painful especially if poked multiple times. He is a true fighter and fights with all his strength. Your kind souls have donated generously and continue to do so. Abir strongly believes that his angels will come to his rescue and save him. My heartfelt gratitude to everyone who supported and still continues to support Abir through his journey. I hope you will continue to support Abir and be with him at every step. Requesting everyone to kindly share our fundraiser. Thank you once again."
+
+    div3.append(text2)
+
+    let div4 = document.createElement("div")
+    div4.setAttribute("class","div4")
+
+    let text3 = document.createElement("p")
+    text3.innerText="Did you know that every FB share gets 1 more donation. Help spread the word!"
+
+    let i = document.createElement("i")
+    i.setAttribute("class","fa-brands fa-facebook-f")
+
+    let p = document.createElement("p")
+    p.innerText="Spread the word"
+    let spread = document.createElement("button")
+
+    spread.append(i,p)
+
+    let span2 = document.createElement("span")
+    span2.append(spread)
+    div4.append(text3,span2)
+
+    document.querySelector(".append").append(div1,div2,div3,div4)
+}
+
+
+let 
