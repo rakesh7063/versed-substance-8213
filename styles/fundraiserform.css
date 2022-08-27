@@ -1,0 +1,206 @@
+ /* start  */
+ .outer_card_div {
+   margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 100%;
+  }
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    margin: 100px 0;
+    width: 60%;
+  }
+
+  .container form {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    padding: 20px;
+    width: 100%;
+    padding-top: 160px;
+    /* margin: 200px 0; */
+
+  }
+  .container form .submit-btn {
+    width: 100%;
+    background: linear-gradient(45deg, #0b4341, #0b4341);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+  }
+
+  .container form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+  }
+
+  .container .card-container {
+    margin-bottom: -100px;
+    position: relative;
+    height: 250px;
+    width: 80%;
+    z-index: 20;
+  }
+
+  .container .card-container .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    background: linear-gradient(45deg, #0b4341, #0b4341);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    padding: 20px;
+   
+  }
+
+  .container .card-container .front .box{
+    display: block;
+
+  }
+  .container .card-container .front .box > h3 {
+    display: block;
+    letter-spacing: 2px;
+    line-height: 50p;
+   margin-bottom: 20px;
+
+  }
+
+
+
+  /* end  */
+
+  #details_form input {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 50px;
+    color: #0b4341;
+
+  }
+
+  #details_form input::placeholder{
+    letter-spacing: 1px;
+    font-size: medium; 
+  }
+  
+
+  #details_form select {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: #0b4341;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-weight: bold;
+
+  }
+
+  #details_form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0b4341;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  #details_form ::placeholder {
+    color: grey;
+  }
+
+  #name_detail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: gray;
+    letter-spacing: 1px;
+  }
+
+  #details_form h2 {
+    text-align: center;
+    color: #0b4341;
+    letter-spacing: 1px;
+  }
+
+  #details_form hr {
+    color: grey;
+  }
+
+  #hears_about {
+    width: fit-content;
+    padding: 10px;
+    height: auto;
+  }
+
+
+  @media (max-width:991px) {
+         
+    .container .card-container {
+      font-size: 14px;
+    }
+
+    .container .card-container .front{
+      background:linear-gradient(45deg, cyan, darkcyan);
+    }
+
+    .container .card-container .front .box > h3 {
+      margin: 15px 0;
+    }
+
+    #add{
+      background:linear-gradient(45deg, cyan, darkcyan);
+    }
+      
+  }
+
+
+  @media (max-width:479px) {
+         
+    .container .card-container {   
+      font-size: 14px;
+      height: 320px; 
+    }
+
+    .container .card-container .front{
+      background:linear-gradient(45deg, cyan, darkcyan);
+    }
+
+  #add{
+    background:linear-gradient(45deg, cyan, darkcyan);
+  }
+
+  .container .card-container .front .box > h3 {
+      margin: 15px 0;
+    }
+
+  }
+
+
+
