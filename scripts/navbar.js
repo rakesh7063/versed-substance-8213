@@ -16,9 +16,9 @@ let navBar = () => {
         <li><a href="#">Fundraise For <i class="fa fa-caret-down" aria-hidden="true"></i></a>
             <div class="sub-menu-1">
                 <ul>
-                    <li><a href="#">Medical Treatment</a></li>
-                    <li><a href="#">NGO / Charity</a></li>
-                    <li><a href="#">Other Cause</a></li>
+                    <li><a href="/fundraiserform.html">Medical Treatment</a></li>
+                    <li><a href="./fundraiserform.html">NGO / Charity</a></li>
+                    <li><a href="/fundraiserform.html">Other Cause</a></li>
 
                 </ul>
 

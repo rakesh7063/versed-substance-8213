@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="/slidebar.css">
+    <title>Ketto</title>
+    <link rel="shortcut icon" href="https://ketto.gumlet.io/assets/images/medical-landing/ketto-shadow.png?w=480&dpr=2.6" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="./styles/slidebar.css">
     <link rel="stylesheet" href="./styles/navbar.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./styles/footer.css">
@@ -36,7 +37,7 @@
 
             </div>
             <h3>Ketto’s 0% Platform fees ensures maximum funds for you</h3>
-            <button>
+            <button id="h4">
                 <h4>Start a Fundraiser for FREE</h4>
             </button>
             <P id="hindi"> नि: शुल्क फंडरेजर शुरू करें ></P>
@@ -45,15 +46,15 @@
     </div>
 
     <div id="position">
-        <div>
-            <button>Donate Now ></button>
+        <div class="prag">
+            <button id="donate">Donate Now ></button>
         </div>
-        <div>
+        <div class="prag">
             <h3>Start Monthly Donation to Save Lives</h3>
             <p>With your support, countless children will receive health care and a happy life. Start your monthly
                 donation today.</p>
         </div>
-        <div>
+        <div class="rak">
             <img src="https://kettocdn.gumlet.io/media/banner/0/92/image/81d7a1a7626397c32f6c1fb83bfdf476ccd734af.png?dpr=1.0&q=70&w=720"
                 alt="">
         </div>
@@ -63,66 +64,17 @@
         <h1>Trending Fundraisers</h1>
         <p>View the fundraisers that are most active right now</p>
     </div>
-    <span id="left" onclick="left()">
+    <span id="left">
         < </span>
-            <span id="right" onclick="right()"> ></span>
+            <span id="right"> ></span>
             <div id="container"></div>
             <div id="note">
                 <p>Note: Some fundraisers are not eligible for any tax deduction such as 80G, 501(c), etc.</p>
                 <h4>View More ----></h4>
             </div>
 
-            <!-- <div class="row">
-       <div class="col-2">
-        <img src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?w=100&dpr=1.0"
-        style="height:450px  ;width: 80px;margin-left:110px; margin-top: 70px;" alt=""></div>
-       <div style="margin-top: 80px; "class="col-5 ">
-        <h4>Start your fundraiser</h4>
-        <p style="margin-bottom: 70px;">It’ll take only 2 minutes. Just tell us a few details about you and the ones you are raising funds
-            for.</p>
-        <h4>
-            Share your fundraiser
-        </h4>
-        <p>All you need to do is share the fundraiser with your friends and family. In no time, support will
-            start pouring in.</p>
-        <p style="font-size: 12px; color: rgb(159,159,159);">Share your fundraiser directly from dashboard on social media.</p>
-        <h4>Withdraw Funds</h4>
-        <p>The funds raised can be withdrawn without any hassle directly to your bank account.</p>
-        <p style="font-size: 12px; color: rgb(159,159,159);">It takes only 5 minutes to withdraw funds on ketto..</p></div>
-       <div class="col-5">helloheloooooooooooooooooooooooooooooooooooooooooooooooooooo</div>
-
-    </div> -->
-
             <h1 style="text-align:center; margin-top: 50px;">Start a Fundraiser in three simple steps</h1>
-            <!-- <div id="row">
-                <div id="row_side">
-                    <div id="row_img">
-                        <img style="height:450px  ;width: 80px;margin-left:110px; margin-top: 70px;"
-                            src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?w=100&dpr=1.0" alt="">
-                    </div>
-                    <div id="row_p">
-                        <h4>Start your fundraiser</h4>
-                        <p style="margin-bottom: 70px;">It’ll take only 2 minutes. Just tell us a few details about you
-                            and the ones you are raising funds
-                            for.</p>
-                        <h4>
-                            Share your fundraiser
-                        </h4>
-                        <p>All you need to do is share the fundraiser with your friends and family. In no time, support
-                            will
-                            start pouring in.</p>
-                        <p style="font-size: 12px; color: rgb(159,159,159);">Share your fundraiser directly from
-                            dashboard on social media.</p>
-                        <h4>Withdraw Funds</h4>
-                        <p>The funds raised can be withdrawn without any hassle directly to your bank account.</p>
-                        <p style="font-size: 12px; color: rgb(159,159,159);">It takes only 5 minutes to withdraw funds
-                            on ketto..</p>
-                    </div>
-                </div>
-                <div>
-                    <h1>Mobile</h1>
-                </div>
-            </div> -->
+        
             <div id="mobile_div">
                 <div id="mobile_side">
                     <img src="./imge/ketto_moble.png" alt="">
@@ -136,8 +88,9 @@
             </div>
            
             <div class="foundation">
-                <button>START A FUNDRAISERS FOR FREE</button>
-                <button>TALK TO US</button>
+                <button id="free">START A FUNDRAISERS FOR FREE</button>
+                <button><a href="tel:919770525851"></a>
+                    TALK TO US</button>
             </div>
             <div class="midia">
                 <p>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</p>

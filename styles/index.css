@@ -10,13 +10,14 @@ position: relative;
 right:650px;
 width: 100%;
 /* border: 1px solid red; */
-top: 50px;
+top: 40px;
 }
 #heading_img{
     margin-top: 1px;
     display: flex;
     width: 100%;
-    margin-top: 90px;
+    margin-top: 100px;
+    /* border: 1px solid red; */
 }
 #heading_img>img{
     width: 100%;
@@ -29,7 +30,8 @@ top: 50px;
     margin-top: 30px;
 }
 #img_side>h1{
-width: 500px;
+width: 650px;
+font-style: inherit;
 }
 #price>div{
     color: hsl(180,96%,30%);
@@ -162,10 +164,15 @@ cursor: pointer;
 #row_p>h4{
     color: rgb(6, 153, 153);
 } */
+
+#left,#right{
+    cursor: pointer;
+}
 #mobile_div{
     display: flex;
     width: 70%;
     margin: auto;
+    margin-top: 20px;
 }
 #mobile_side>img{
     width: 500px;
@@ -386,12 +393,12 @@ font-style: inherit;
     row-gap: 50px;
 }
 #why>div{
-    width: 80%;
+    width: 75%;
     /* border: 1px solid teal; */
     text-align: center;
 }
 #why>div>img{
-    width: 90px;
+    width: 75px;
     /* border: 1px solid red; */
     display: block;
     margin: auto;
@@ -401,7 +408,8 @@ font-style: inherit;
     height: 4px;
     display: block;
     margin: auto;
-  background-color: yellowgreen;
+    border: 1px solid rgb(142, 192, 42);
+  background-color: rgb(142, 192, 42);
 }
 #no_2{
     /* width: 300px; */
@@ -416,4 +424,118 @@ font-style: inherit;
 }
 #why>div:nth-child(2)>hr{
     margin-top: 10px;
+}
+
+@media (max-width:991px){
+    #heading_img{
+        margin-top: 360px;
+        width: 75%;
+
+    } 
+    #img_side{
+        display: none;
+    }
+    #heading_img img{
+        width: 75%;
+    }
+    #position{
+        width: 60%;
+        left: 50px;
+        top: -50px;
+    }
+   .prag>h3,.prag>p{
+    display: none;
+   }
+   .rak>img{
+    width: 75%;
+    height: 100%;
+   }
+    #div h1{
+        width: 75%;
+    }
+    #div p{
+        width: 75%;
+    }
+
+    #left,#right,#container{
+        display: none;
+    }
+    #subcont{
+        display: none;
+    }
+    #note{
+        display: none;
+    }
+    .pp{
+       display: none;
+    }
+
+    .foundation{
+        width: 75%;
+        justify-content: center;
+    }
+
+    .midia{
+        width: 75%;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .shadow{
+        width: 75%;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+       justify-content: center;
+        margin-top: 50px;
+    }
+
+    #Cause{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    /* .fb{
+        margin-left: -30px;
+    }
+    .what{
+        margin-left: -20px;
+    } */
+    .midia_btn{
+        margin-right: 40px;
+    }
+
+    #medical{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #ketto{
+        display: block;
+        text-align: center;
+        width: 75%;
+    }
+
+    #why{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+   #mobile_div{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 75%;
+    
+   }
+#shdow_img{
+    /* border: 1px solid red; */
+    width: 70%;
+    margin-top: 90px;
+}
 }

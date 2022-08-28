@@ -22,21 +22,7 @@ let data = [
       "location": "banglore",
       "id": 1
     },
-    {
-      "image": "https://kettocdn.gumlet.io/media/campaign/180000/180773/image/wid6089ceb85c0bd.jpeg?w=300&dpr=1.3",
-      "title": "Feeding From Far-Ration Distribution Amid Lockdown",
-      "avatarname": "",
-      "name": "by Pooja Reddy",
-      "raised": "4,81,33,147",
-      "lastdonation": "Last donation 9 hours ago",
-      "items_2": 131,
-      "items_4": 12541,
-      "avatarimg": "https://kettocdn.gumlet.io/media/individual/1463000/1463388/image/62c32feb56031.jpg?w=50&dpr=1.3",
-      "category": "medical",
-      "type": "taxBenefit",
-      "location": "delhi",
-      "id": 2
-    },
+    
     {
       "image": "https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.3",
       "title": "Help father and his 20-year old son, Father-Kidney transplant, Son- Bone marrow transplant. Please save the family",
@@ -141,6 +127,21 @@ let data = [
       "type": "trending",
       "location": "delhi",
       "id": 9
+    },
+    {
+      "image": "https://kettocdn.gumlet.io/media/campaign/180000/180773/image/wid6089ceb85c0bd.jpeg?w=300&dpr=1.3",
+      "title": "Feeding From Far-Ration Distribution Amid Lockdown",
+      "avatarname": "",
+      "name": "by Pooja Reddy",
+      "raised": "4,81,33,147",
+      "lastdonation": "Last donation 9 hours ago",
+      "items_2": 131,
+      "items_4": 12541,
+      "avatarimg": "https://kettocdn.gumlet.io/media/individual/1463000/1463388/image/62c32feb56031.jpg?w=50&dpr=1.3",
+      "category": "medical",
+      "type": "taxBenefit",
+      "location": "delhi",
+      "id": 2
     }
   ]
 
@@ -149,69 +150,6 @@ let data = [
 let index = 0;
 
 
-//   let append = (data) =>{
-//     let container = document.getElementById("container");
-//     container.innerHTML = null
- 
-//     data.forEach(({image,title,avatarimg,name,raised,lastdonation,items_2,items_4}) => {
- 
-//      let img = document.createElement("img");
-//      let Title = document.createElement("h3");
-//      let aimg = document.createElement("img");
-//      let hname = document.createElement("p");
-//      let raised_count = document.createElement("h3");
-//      let ldonate = document.createElement("h3");
-//      let days = document.createElement("h3");
-//      let supports = document.createElement("h3");
-//      let dayl = document.createElement("p");
-//      dayl.innerText = "Days Left";
-//      dayl.setAttribute("class","dayl")
-//      let supporters = document.createElement("p");
-//      supporters.innerText = "Supporters";
-//      supporters.setAttribute("class","support")
-//      let raisec = document.createElement("p");
-//      raisec.innerText = "raised";
-//      raisec.setAttribute("class","raisec")
- 
-//      let bar = document.createElement("hr");
-//      bar.setAttribute("class","pbar")
-//      img.src = image;
-//      Title.innerText = title;
-//      Title.setAttribute("class","Title")
-//      img.setAttribute("class","main_img");
-//      aimg.src = avatarimg;
-//      aimg.setAttribute("class","avtar_img")
-//      hname.innerText = name;
-//      hname.setAttribute("class","helper")
-//      raised_count.innerText = `₹ ${raised}`;
-//      ldonate.innerText = lastdonation;
-//      ldonate.setAttribute("class","donate")
-//      days.innerText = `${items_2}`;
-//      supports.innerText = `${items_4}`;
- 
-//      let profile_details = document.createElement("div");
-//      profile_details.append(aimg,hname);
-//      profile_details.setAttribute("class","profile")
- 
-//      let count = document.createElement("div");
-//      count.append(raised_count,raisec)
-//      count.setAttribute("class","count")
- 
-//      let details_suports = document.createElement("div");
-//      details_suports.append(days,dayl,supports,supporters);
-//      details_suports.setAttribute("class","details")
- 
-//      let sub_div = document.createElement("div");
-//      sub_div.setAttribute("id","subcont")
-//      sub_div.append(img,Title,profile_details,count,ldonate,bar,details_suports);
-
-// // ******
-
-
-//      container.append(sub_div)
-//     });
- 
-//  }
 
 let sidebar = ()=>{
     let container = document.getElementById("container");
@@ -276,6 +214,9 @@ let sidebar = ()=>{
         let don_btn = document.createElement("button");
         don_btn.innerText = "donate";
         don_btn.id = "don_btn"
+        don_btn.onclick = ()=>{
+          window.location.href = "/fundraiserform.html"
+        }
         btn_div.append(fb_btn,don_btn)
         btn_div.id = "btn_div"
         sub_div.append(img,Title,profile_details,count,ldonate,bar,details_suports,btn_div);   
@@ -305,3 +246,26 @@ let right = ()=>{
     
 }
 sidebar()
+
+document.getElementById("left").onclick = ()=>{
+  left()
+}
+
+document.getElementById("right").onclick = ()=>{
+  right()
+}
+
+document.getElementById("hindi").onclick = ()=>{
+  window.location.href = "/fundraiserform.html"
+}
+document.getElementById("donate").onclick = ()=>{
+  window.location.href = "/fundraiserform.html"
+}
+
+document.getElementById("h4").onclick = ()=>{
+  window.location.href = "/fundraiserform.html"
+}
+
+document.getElementById("free").onclick = ()=>{
+  window.location.href = "/fundraiserform.html"
+}
