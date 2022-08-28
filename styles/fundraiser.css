@@ -28,6 +28,11 @@
   list-style: none;
   cursor: pointer;
 }
+#chunnu li:hover{
+  color: #03a9a8;
+
+}
+
 #chunnu li:nth-child(1) {
   color: #03a9a8;
   font-weight: bold;
